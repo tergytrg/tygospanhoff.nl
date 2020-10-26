@@ -21,8 +21,8 @@ body {
 }
 @media(max-width:1023px){
     .touch-side-swipe{
-        background: #131794;
 		font-size: 150%;
+		background-color: #131794;
     }
 	.touch-side-swipe a {
 		background-color: #fff;
@@ -42,15 +42,27 @@ body {
 	}
 }
 @media(min-width:1024px){
-    .touch-side-swipe li {
-        display: block;
+    .touch-side-swipe {
+		text-align: left;
         float: left;
-        padding: 2px;
-        margin-right: 5px;
-        border-radius: 2px;
-        border: 1px solid #fff;
-    }
-	.touch-side-swipe a {color:#131794;
+		font-size: 150%;
+		padding: 4px;
+	}	
+	
+	.touch-side-swipe a {
+		background-color: #fff;
+		color: #131794;
+		padding: 12px;
+		text-decoration: none;
+        border: 1px solid #131794;		
+	}
+		.touch-side-swipe a:hover {
+		background-color: #0494dd;
+		color: #fff
+	}
+	.touch-side-swipe a.active {
+		background-color: #0494dd;
+		color: #fff
 	}
 }
 .touch-side-swipe ul{display: block;overflow-y:overlay;margin: 0; padding: 0;line-height: 30px}
