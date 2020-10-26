@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Barcode Scanner Beta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="touch-sideswipe.css">
+</head>
+<body>
+	<div class="header">
+	<div id="touchSideSwipe" class="touch-side-swipe">
+			<a href="index.html">Scanner</a>
+			<a href="over.html" class="active">Over</a>
+			<a href="help.html">Help</a>
+    </div>
+	<img src="logo.png" alt="OTOTEC" style="width:auto;">
+	</div>
+    <div class="content">
+        <p>Hier komt iets over de app te staan ofzo? weet ik veel. tis veel te laat nu, zie ik morgen wel.</p>
+    </div>
+    <!---->
+
+    <script src="touch-sideswipe.js"></script>
+    <script type="text/javascript">
+        var config = {
+            elementID: 'touchSideSwipe',
+            elementWidth: 400, //px
+            elementMaxWidth: 0.8, // *100%
+            sideHookWidth: 44, //px
+            moveSpeed: 0.2, //sec
+            opacityBackground: 0.8,
+            shiftForStart: 50, // px
+            windowMaxWidth: 1024, // px
+        }
+        var touchSideSwipe = new TouchSideSwipe(config);
+    </script>
+    <script>
+        // demo open/close on load document
+        setTimeout(function() {touchSideSwipe.tssOpen()}, 2000);
+        setTimeout(function() {touchSideSwipe.tssClose()}, 3500);
+        // demo open/close buttons
+        document.getElementById('callOpen').addEventListener('click', function(){touchSideSwipe.tssOpen()});
+        document.getElementById('callClose').addEventListener('click', function(){touchSideSwipe.tssClose()});
+    </script>
+
+</body>
+
+</html>
