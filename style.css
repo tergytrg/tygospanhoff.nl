@@ -13,11 +13,11 @@ body {
   padding-top: 10px;
 }
 .content{
-    padding: 2px;
+    padding: 20px;
     font-size: 18px;
     color: #fff;
     background: #131794;
-    line-height: 40px;
+    line-height: 10px;
 }
 @media(max-width:1023px){
     .touch-side-swipe{
