@@ -11,6 +11,8 @@ body {
   background: #fff;
   font-size: 100%;
   padding-top: 10px;
+  position: fixed;
+  top: 0;
 }
 .content{
     padding: 20px;
