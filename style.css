@@ -3,7 +3,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 
 body {
     padding: 0px;
-    background-color: #131794;
+    background-color: #0494dd;
 }
 .header {
   padding: 5px;
@@ -16,7 +16,7 @@ body {
     padding: 20px;
     font-size: 20px;
     color: #fff;
-    background: #0494dd;
+    background: #131794;
     line-height: 40px;
 }
 @media(max-width:1023px){
