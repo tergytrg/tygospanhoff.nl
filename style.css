@@ -13,8 +13,7 @@ body {
   padding-top: 10px;
   position: fixed;
   top: 0;
-  padding-top: 102px;
-  width: 100%;
+  width: 500%;
 }
 .content{
     padding: 20px;
@@ -22,7 +21,6 @@ body {
     color: #fff;
     background: #131794;
     line-height: 20px;
-    padding-top: 102px;
 }
 @media(max-width:1023px){
     .touch-side-swipe{
