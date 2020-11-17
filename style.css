@@ -12,7 +12,10 @@ body {
   font-size: 100%;
   width: 100%;
 }
-.content{
+* {
+  box-sizing: border-box;
+}
+.content {
     padding: 20px;
     font-size: 18px;
     color: #fff;
