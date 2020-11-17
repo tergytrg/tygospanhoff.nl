@@ -6,6 +6,7 @@ body {
     background-color: #0494dd;
 }
 .header {
+  position: fixed;
   padding: 5px;
   text-align: center;
   background: #fff;
