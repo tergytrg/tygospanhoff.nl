@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="touch-sideswipe.css">
-    <link rel="stylesheet" href="stickyheader.css">
     <link rel="icon" href="icon.png">
 </head>
 <body>
@@ -47,6 +46,20 @@
         document.getElementById('callOpen').addEventListener('click', function(){touchSideSwipe.tssOpen()});
         document.getElementById('callClose').addEventListener('click', function(){touchSideSwipe.tssClose()});
     </script>
+    <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 
 </body>
 
