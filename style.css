@@ -24,14 +24,6 @@ body {
     padding-top: 10px;
     line-height: 20px;
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
-.sticky + .content {
-  padding-top: 60px;
-}
 @media(max-width:1023px){
     .touch-side-swipe{
 		font-size: 150%;
