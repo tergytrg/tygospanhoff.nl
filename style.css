@@ -30,7 +30,7 @@ body {
   width: 100%
 }
 .sticky + .content {
-  padding-top: 102px;
+  padding-top: 60px;
 }
 @media(max-width:1023px){
     .touch-side-swipe{
