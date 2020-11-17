@@ -11,6 +11,7 @@ body {
   background: #fff;
   font-size: 100%;
   width: 100%;
+  padding-top: 10px;
 }
 * {
   box-sizing: border-box;
@@ -22,6 +23,14 @@ body {
     background: #131794;
     padding-top: 10px;
     line-height: 20px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.sticky + .content {
+  padding-top: 102px;
 }
 @media(max-width:1023px){
     .touch-side-swipe{
