@@ -115,7 +115,9 @@
 
 
             Quagga.onDetected(function (result) {
-		alert('value', "Barcode detected and processed : [" + result.codeResult.code + "]", result);
+		function setInputValue(codedoos, result) {
+   		document.getElementById(codedoos).setAttribute('value', "Barcode detected and processed : [" + result.codeResult.code + "]", result);
+}
             });
         }
 
