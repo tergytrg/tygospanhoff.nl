@@ -78,11 +78,11 @@
 
             }, function (err) {
                 if (err) {
-                    window.alert(err);
+                    console.log(err);
                     return
                 }
 
-                window.alert("Initialization finished. Ready to start");
+                console.log("Initialization finished. Ready to start");
                 Quagga.start();
 
                 // Set flag to is running
@@ -115,7 +115,8 @@
 
 
             Quagga.onDetected(function (result) {
-document.getElementById("codedoos").value = "Johnny Bravo"; 
+		function setInputValue(codedoos, result) {
+   		document.getElementById(codedoos).setAttribute('value', "Barcode detected and processed : [" + result.codeResult.code + "]", result);
 }
             });
         }
