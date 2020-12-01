@@ -30,13 +30,11 @@
     <div id="scanner-container"></div>
     <input type="button" id="btn" value="Start/Stop the scanner" /><br>
     <input type="text" id="codedoos" value="code" />
-
-
     <!-- Include the image-diff library -->
     <script src="quagga.min.js"></script>
 
     <script>
-         var _scannerIsRunning = false;
+        var _scannerIsRunning = false;
 
         function startScanner() {
             Quagga.init({
@@ -81,7 +79,7 @@
             }, function (err) {
                 if (err) {
                     console.log(err);
-                    return;
+                    return
                 }
 
                 console.log("Initialization finished. Ready to start");
@@ -117,9 +115,9 @@
 
 
             Quagga.onDetected(function (result) {
-window.alert("Barcode detected and processed : [" + result.codeResult.code + "]", result);
+document.getElementById("codedoos").value = "Johnny Bravo"; 
 }
-            );}
+            });
         }
 
 
