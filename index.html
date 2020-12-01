@@ -28,10 +28,8 @@
 	</div>
     <div class="content">
     <div id="scanner-container"></div>
-<p id="demo">JavaScript can change HTML content.</p>
     <input type="button" id="btn" value="Start/Stop the scanner" /><br>
     <input type="text" id="codedoos" value="code" />
-
     <!-- Include the image-diff library -->
     <script src="quagga.min.js"></script>
 
@@ -117,7 +115,8 @@
 
 
             Quagga.onDetected(function (result) {
-   		alert('value', "Barcode detected and processed : [" + result.codeResult.code + "]", result);
+		function setInputValue(codedoos, result) {
+   		document.getElementById(codedoos).setAttribute('value', "Barcode detected and processed : [" + result.codeResult.code + "]", result);
 }
             });
         }
