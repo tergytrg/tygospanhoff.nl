@@ -78,11 +78,11 @@
 
             }, function (err) {
                 if (err) {
-                    console.log(err);
+                    window.alert(err);
                     return
                 }
 
-                console.log("Initialization finished. Ready to start");
+                window.alert("Initialization finished. Ready to start");
                 Quagga.start();
 
                 // Set flag to is running
