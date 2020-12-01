@@ -33,7 +33,6 @@
     <!-- Include the image-diff library -->
 <p id="demo">JavaScript can change HTML content.</p>
 
-<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
     <script src="quagga.min.js"></script>
 
     <script>
@@ -118,8 +117,7 @@
 
 
             Quagga.onDetected(function (result) {
-		function setInputValue(codedoos, result) {
-   		document.getElementById(codedoos).setAttribute('value', "Barcode detected and processed : [" + result.codeResult.code + "]", result);
+document.getElementById("demo").innerHTML = "Hello JavaScript!"
 }
             });
         }
