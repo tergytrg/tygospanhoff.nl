@@ -2,7 +2,7 @@
 <html lang="nl">
 
 <head>
-    <title>Barcode Scanner Beta</title>
+    <title>Ototec Scanner</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
@@ -26,10 +26,10 @@
     </div>
 	<img src="logo.png" alt="OTOTEC">
 	</div>
-	versie 114
+	versie 115
     <div class="content">
     <div id="scanner-container"></div>
-    <input type="button" id="btn" value="Start/Stop the scanner" /><br>
+    <input type="button" id="btn" value="Scan" /><br>
     <input type="text" id="codedoos">
 
     <script src="quagga.min.js"></script>
@@ -128,8 +128,10 @@ document.getElementById("codedoos").value = result.codeResult.code;
             if (_scannerIsRunning) {
                 Quagga.stop();
 		_scannerIsRunning = false;
+		document.getElementById("btn").value = "Scan";
             } else {
                 startScanner();
+		document.getElementById("btn").value = "Stop";
             }
         }, false);
     </script>
