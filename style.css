@@ -24,6 +24,7 @@ body {
 	width: 360px;
 	height: 360px;
 	margin: 10px;
+	overflow: hidden;
 }
 * {
   box-sizing: border-box;
