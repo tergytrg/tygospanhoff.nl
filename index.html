@@ -28,9 +28,9 @@
     </div>
 	<img src="logo.png" alt="OTOTEC">
 	</div>
-	versie 128
+	versie 129
     <div class="content">
-    <div id="scanner-container" class="scanding"></div>
+    <div id="scanner-container"></div>
     <input type="button" id="btn" class="knop" value="Scan" /><br>
     <input type="text" id="codedoos" class="knop">
 
@@ -46,8 +46,8 @@
                     type: "LiveStream",
                     target: document.querySelector('#scanner-container'),
                     constraints: {
-                        width: 640,
-                        height: 640,
+                        width: {min: 640},
+                        height: {min: 480},
                         facingMode: "environment"
                     },
                 },
