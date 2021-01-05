@@ -26,7 +26,7 @@
     </div>
 	<img src="logo.png" alt="OTOTEC">
 	</div>
-	versie 125
+	versie 126
     <div class="content">
     <div id="scanner-container" class="scanding"></div>
     <input type="button" id="btn" class="knop" value="Scan" /><br>
@@ -152,7 +152,14 @@ document.getElementById("codedoos").value = result.codeResult.code;
         }
         var touchSideSwipe = new TouchSideSwipe(config);
     </script>
+	<script>
+	var scrollEventHandler = function()
+	{
+	window.scroll(0, window.pageYOffset)
+	}
 
+	window.addEventListener("scroll", scrollEventHandler, false);
+	</script>
 
 </body>
 
