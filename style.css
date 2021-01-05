@@ -5,6 +5,10 @@ body {
     padding: 0px;
     background-color: #0494dd;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 .header {
   padding: 5px;
   text-align: center;
@@ -21,8 +25,8 @@ body {
 	color: #fff;
 }
 .scanding {
-	width: 360px;
-	height: 360px;
+	width: 340px;
+	height: 340px;
 	margin: 10px;
 	overflow: hidden;
 }
