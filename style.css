@@ -20,6 +20,11 @@ body {
 	margin: 10px;
 	color: #fff;
 }
+.scanding {
+	width: 360px;
+	height: 360px;
+	margin: 10px;
+}
 * {
   box-sizing: border-box;
 }
