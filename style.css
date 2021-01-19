@@ -33,7 +33,7 @@ padding: 20px;
     padding-top: 20px;
     line-height: 20px;
 }
-@media(max-width:1023px){
+@media(max-width:10230px){
     .touch-side-swipe{
 		font-size: 150%;
 		background-color: #131794;
@@ -55,7 +55,7 @@ padding: 20px;
 		color: #fff
 	}
 }
-@media(min-width:1024px){
+@media(min-width:10240px){
     .touch-side-swipe {
 		text-align: left;
         float: left;
