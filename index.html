@@ -5,7 +5,7 @@
     <title>Ototec Scanner</title>
     <meta charset="UTF-8">
 	<meta name='viewport' 
-     content='width=1120'
+     content='width=device-width, initial-scale=0.2, maximum-scale=0.2, 
      user-scalable=0' >
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="touch-sideswipe.css">
@@ -28,12 +28,11 @@
     </div>
 	<img src="logo.png" alt="OTOTEC">
 	</div>
-	versie 137
+	versie 129
     <div class="content">
     <div id="scanner-container"></div>
-    <input type="text" id="codedoos" class="knop">
     <input type="button" id="btn" class="knop" value="Scan" /><br>
-
+    <input type="text" id="codedoos" class="knop">
 
     <script src="quagga.min.js"></script>
 
@@ -47,8 +46,8 @@
                     type: "LiveStream",
                     target: document.querySelector('#scanner-container'),
                     constraints: {
-                        width: 1080,
-                        height: 1080,
+                        width: 640,
+                        height: 480,
                         facingMode: "environment"
                     },
                 },
@@ -145,13 +144,13 @@ document.getElementById("codedoos").value = result.codeResult.code;
     <script type="text/javascript">
         var config = {
             elementID: 'touchSideSwipe',
-            elementWidth: 4000, //px
-            elementMaxWidth: 8, // *100%
-            sideHookWidth: 440, //px
-            moveSpeed: 2, //sec
+            elementWidth: 400, //px
+            elementMaxWidth: 0.8, // *100%
+            sideHookWidth: 44, //px
+            moveSpeed: 0.2, //sec
             opacityBackground: 0.8,
-            shiftForStart: 500, // px
-            windowMaxWidth: 10240, // px
+            shiftForStart: 50, // px
+            windowMaxWidth: 1024, // px
         }
         var touchSideSwipe = new TouchSideSwipe(config);
     </script>
