@@ -5,7 +5,7 @@
     <title>Ototec Scanner</title>
     <meta charset="UTF-8">
 	<meta name='viewport' 
-     content='width=device-width, initial-scale=0.5, maximum-scale=0.5, 
+     content='width=device-width, initial-scale=0.1maximum-scale=0.1
      user-scalable=0' >
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="touch-sideswipe.css">
@@ -28,7 +28,7 @@
     </div>
 	<img src="logo.png" alt="OTOTEC">
 	</div>
-	versie 133
+	versie 134
     <div class="content">
     <div id="scanner-container"></div>
     <input type="text" id="codedoos" class="knop">
@@ -47,8 +47,8 @@
                     type: "LiveStream",
                     target: document.querySelector('#scanner-container'),
                     constraints: {
-                        width: 880,
-                        height: 720,
+                        width: 1920
+                        height: 1080
                         facingMode: "environment"
                     },
                 },
