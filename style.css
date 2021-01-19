@@ -13,7 +13,7 @@ html, body {
   padding: 10px;
   text-align: center;
   background: #fff;
-  font-size: 500%;
+  font-size: 100%;
   width: 100%;
   padding-top: 20px;
 }
@@ -27,7 +27,7 @@ html, body {
 }
 .content {
 padding: 20px;
-    font-size: 100px;
+    font-size: 20px;
     color: #fff;
     background: #131794;
     padding-top: 20px;
