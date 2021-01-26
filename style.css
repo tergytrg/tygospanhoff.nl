@@ -33,6 +33,14 @@ html, body {
     padding-top: 25px;
     line-height: 20px;
 }
+.indcontent {
+    padding: 20px;
+    font-size: 45px;
+    color: #fff;
+    background: #131794;
+    padding-top: 10px;
+    line-height: 20px;
+}
 @media(max-width:1023px){
     .touch-side-swipe{
 		font-size: 150%;
