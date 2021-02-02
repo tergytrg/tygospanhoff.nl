@@ -10,12 +10,12 @@ html, body {
     overflow-x: hidden;
 }
 .header {
-  padding: 5px;
+  padding: 12.5px;
   text-align: center;
   background: #fff;
   font-size: 100%;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 25px;
 }
 .knop {
 	width: 100%;
