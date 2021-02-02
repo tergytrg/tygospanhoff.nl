@@ -29,7 +29,6 @@ html, body {
     font-size: 20px;
     color: #fff;
     background: #131794;
-    padding-top: 25px;
     line-height: 20px;
 }
 .indcontent {
@@ -37,7 +36,6 @@ html, body {
     font-size: 45px;
     color: #fff;
     background: #131794;
-    padding-top: 10px;
     line-height: 20px;
 }
 @media(max-width:10239px){
