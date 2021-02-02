@@ -29,14 +29,7 @@ html, body {
     color: #fff;
     background: #131794;
     line-height: 20px;
-    padding: 10px;
-}
-.indcontent {
-    padding: 20px;
-    font-size: 45px;
-    color: #fff;
-    background: #131794;
-    line-height: 20px;
+    padding: 5px;
 }
 @media(max-width:10239px){
     .touch-side-swipe{
