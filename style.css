@@ -26,6 +26,7 @@ html, body {
   box-sizing: border-box;
 }
 .content {
+padding: 20px;
     font-size: 20px;
     color: #fff;
     background: #131794;
