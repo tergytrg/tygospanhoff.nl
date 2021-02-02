@@ -40,16 +40,16 @@ html, body {
 }
 @media(max-width:10239px){
     .touch-side-swipe{
-		font-size: 150%;
+		font-size: 375%;
 		background-color: #131794;
     }
 	.touch-side-swipe a {
 		background-color: #fff;
 		color: #131794;
 		display: block;
-		padding: 12px;
+		padding: 30px;
 		text-decoration: none;
-        border: 1px solid #131794;		
+        border: 2.5px solid #131794;		
 	}
 	.touch-side-swipe a:hover {
 		background-color: #0494dd;
