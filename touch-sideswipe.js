@@ -23,7 +23,7 @@
             moveSpeed: config.moveSpeed || 0.2, //sec
             opacityBackground: config.opacityBackground || 0.8,
             shiftForStart: config.shiftForStart || 50, // px
-            windowMaxWidth: config.windowMaxWidth || 1024, // px
+            windowMaxWidth: config.windowMaxWidth || 10240, // px
         };
         //------------------------------------------------------------------
         var winInnerWidth = window.innerWidth;
