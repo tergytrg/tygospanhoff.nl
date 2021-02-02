@@ -26,7 +26,6 @@ html, body {
   box-sizing: border-box;
 }
 .content {
-padding: 20px;
     font-size: 20px;
     color: #fff;
     background: #131794;
@@ -34,6 +33,7 @@ padding: 20px;
     line-height: 20px;
 }
 .indcontent {
+    padding: 20px;
     font-size: 45px;
     color: #fff;
     background: #131794;
