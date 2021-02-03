@@ -31,7 +31,7 @@
 	</div>
 	versie 213
     <div class="indcontent">
-    <div class="welkom">
+    <div id="training" class="welkom">
 	hallo
     </div>
     <div id="scanner-container"></div>
@@ -140,7 +140,9 @@ document.getElementById("codedoos").value = result.codeResult.code;
 		_scannerIsRunning = false;
 		document.getElementById("btn").value = "Scan";
 		verbergen("scanner-container");
+		verschijnen("training");
             } else {
+		verbergen("training");
 		verschijnen("scanner-container");
                 startScanner();
 		document.getElementById("btn").value = "Stop";
