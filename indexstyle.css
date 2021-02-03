@@ -20,9 +20,8 @@ html, body {
 height: 65vh;
 max-height: 65vh;
 }
-training {
+.tra {
 height: 60vh;
-line-height: 60px;
 }
 .knop {
 	width: 100%;
