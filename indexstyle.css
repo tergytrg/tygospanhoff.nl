@@ -22,6 +22,7 @@ max-height: 65vh;
 }
 training {
 height: 60vh;
+line-height: 60px;
 }
 .knop {
 	width: 100%;
