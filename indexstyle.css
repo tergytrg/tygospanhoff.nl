@@ -19,6 +19,7 @@ html, body {
 }
 .welkom {
 	height: 70vh;
+	width: 100%;
 }
 .knop {
 	width: 100%;
