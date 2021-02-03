@@ -18,6 +18,7 @@ html, body {
 }
 .prio {
 height: 65vh;
+max-height: 65vh;
 }
 training {
 max-height: 60vh;
