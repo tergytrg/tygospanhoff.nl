@@ -19,6 +19,9 @@ html, body {
 .prio {
 height: 65vh;
 }
+training {
+max-height: 60vh;
+}
 .knop {
 	width: 100%;
 	height: 100px;
