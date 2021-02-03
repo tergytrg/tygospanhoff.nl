@@ -36,12 +36,12 @@
     <input type="button" id="btn" class="knop" value="Scan" /><br>
     <script src="quagga.min.js"></script>
 <script>
-function verbergen() {
-  var x = document.getElementById("scanner-container");
+function verbergen(blokje) {
+  var x = document.getElementById(blokje);
     x.style.display = "none";
 }
-function verschijnen() {
-  var x = document.getElementById("scanner-container");
+function verschijnen(blokje) {
+  var x = document.getElementById(blokje);
     x.style.display = "block";
 }
 </script>
@@ -136,9 +136,9 @@ document.getElementById("codedoos").value = result.codeResult.code;
                 Quagga.stop();
 		_scannerIsRunning = false;
 		document.getElementById("btn").value = "Scan";
-		verbergen();
+		verbergen("scanner-container");
             } else {
-		verschijnen();
+		verschijnen("scanner-container");
                 startScanner();
 		document.getElementById("btn").value = "Stop";
             }
