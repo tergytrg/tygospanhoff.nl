@@ -163,8 +163,9 @@
                 		verschijnen("product-info");
                             } else {
                 		verbergen("training");
+                        verbergen("product-info");
                 		verschijnen("scanner-container");
-                                startScanner();
+                        startScanner();
                 		document.getElementById("btn").value = "Stop";
                             }
                         }, false);
