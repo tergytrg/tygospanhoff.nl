@@ -21,7 +21,7 @@
         </style>
     </head>
 
-    <body>
+    <body onload="verbergen(product-info)">
         <div class="header">
             <div id="touchSideSwipe" class="touch-side-swipe">
                 <a href="index.html" class="active">Scanner</a>
@@ -159,7 +159,7 @@
                 		_scannerIsRunning = false;
                 		document.getElementById("btn").value = "Scan";
                 		verbergen("scanner-container");
-                		verschijnen("training");
+                		verschijnen("product-info");
                             } else {
                 		verbergen("training");
                 		verschijnen("scanner-container");
