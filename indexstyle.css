@@ -17,13 +17,13 @@ h1 {
 	margin: 0.67em 0;
 }
 #aantal {
-	text-allign: center;
+	text-align: center;
 }
 #plusje {
-	color: #99FF99;
+	background: #99FF99;
 }
 #minnetje {
-	color: #FF9999;
+	background: #FF9999;
 }
 hr {
 	box-sizing: content-box;
