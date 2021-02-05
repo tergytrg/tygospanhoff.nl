@@ -74,7 +74,9 @@
                     x.style.display = "block";
                 }
                 function aantalplus() {
-                    document.getElementById("aantal").stepUp(1);
+                    var x = document.getElementById("aantal").value+1;
+                    document.getElementById("aantal").value = x;
+                    
                 }
             </script>
             <script>
