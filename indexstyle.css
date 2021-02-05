@@ -8,7 +8,7 @@ html {
 body {
 	margin: 0;
 }
-product-info {
+#product-info {
 	display: none;
 }
 h1 {
