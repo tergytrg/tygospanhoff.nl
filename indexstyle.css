@@ -10,7 +10,9 @@ body {
 }
 #product-info {
 	display: none;
-	max-width: 100%;
+	white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
 }
 h1 {
 	font-size: 2em;
