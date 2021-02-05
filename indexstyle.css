@@ -16,6 +16,15 @@ h1 {
 	font-size: 2em;
 	margin: 0.67em 0;
 }
+#aantal {
+	text-allign: center;
+}
+#plusje {
+	color: #99FF99;
+}
+#minnetje {
+	color: #FF9999;
+}
 hr {
 	box-sizing: content-box;
 	height: 0;
