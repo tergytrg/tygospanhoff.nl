@@ -45,7 +45,7 @@
                     <input type="text" id="omschrijving" value="OMSCHRIJVING" class="knop" readonly /> <br /><br />
                     Aantal product:<br />
                     <input type="button" id="minnetje" class="aantalletje" value="-"  onclick="aantalmin()" /> 
-                    <input type="text" id="aantal" class="aantalletje" value="0"/>
+                    <input type="text" id="productaantal" class="aantalletje" value="0"/>
                     <input type="button" id="plusje" class="aantalletje" value="+" onclick="aantalplus()" /> 
                 </div>
                 
@@ -74,8 +74,8 @@
                     x.style.display = "block";
                 }
                 function aantalplus() {
-                    var x = document.getElementById(aantal).value;
-                    x = (x + 1);
+                  var x = document.getElementById(productaantal).value;
+                  var x = (x + 1);
                 }
             </script>
             <script>
