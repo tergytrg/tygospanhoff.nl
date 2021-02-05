@@ -44,9 +44,9 @@
                     Omschrijving:<br />
                     <input type="text" id="omschrijving" value="OMSCHRIJVING" class="knop" readonly /> <br /><br />
                     Aantal product:<br />
-                    <input type="button" id="minnetje" class="aantalletje" value="-" /> 
-                    <input type="text" id="aantal" class="aantalletje" value="0" onclick="aantalplus(-1)"/>
-                    <input type="button" id="plusje" class="aantalletje" value="+" onclick="aantalplus(1)" /> 
+                    <input type="button" id="minnetje" class="aantalletje" value="-"  onclick="aantalmin()" /> 
+                    <input type="text" id="aantal" class="aantalletje" value="0"/>
+                    <input type="button" id="plusje" class="aantalletje" value="+" onclick="aantalplus()" /> 
                 </div>
                 
                 <div id="training" class="tra">
@@ -73,9 +73,9 @@
                   var x = document.getElementById(blokje);
                     x.style.display = "block";
                 }
-                function aantalplus(getal) {
+                function aantalplus() {
                     var x = document.getElementById(aantal).value;
-                    x = (x + getal);
+                    x = (x + 1);
                 }
             </script>
             <script>
