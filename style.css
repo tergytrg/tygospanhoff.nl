@@ -10,7 +10,7 @@ ul {
   overflow: hidden;
   background-color: #26B;
   font-size: 20px;
-  width: 1240px;
+  width: min(1240px, 90%);
 }
 .ulcontainer {
   width: 100%;
@@ -36,15 +36,19 @@ li a:hover {
 	font-size: 1.2em;
 	font-family: verdana;
     background: #FFF;
-	width: 1200px;
+	width: min(1200px, 90%);
     margin: auto;
 }
 .contentcontainer {
 	padding: 20px;
 }
+.foto {
+	width: min(500px, 100%);
+}
 h1 {
 	color: #059;
 	margin-top: 0;
+}
 p {
 	color: #444;
 }
