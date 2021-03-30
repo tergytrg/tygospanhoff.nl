@@ -1,7 +1,9 @@
 app {
   float: left;
-  padding: 10px;
-  width: max(30%, 190px);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  width: min(100%, 389px);
 }
 
 app a {
