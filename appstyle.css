@@ -1,0 +1,38 @@
+applijst {
+  list-style-type: none;
+  margin: auto;
+  font-size: 20px;
+  width: min(1240px, 90%);
+}
+app {
+  float: left;
+  padding: 10px;
+  width: max(30%, 190px);
+}
+
+app a {
+  display: block;
+  color: #444;
+  text-align: center;
+  text-decoration: none;
+  background: #FFF;
+  padding: 40%;
+  box-sizing: border-box;
+  position: relative;
+}
+app a:hover {
+  background-color: #059;
+  color: #FFF;
+}
+app p {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.appcontainer {
+	padding: 10px;
+	font-size: 1.2em;
+	font-family: verdana;
+	width: min(1260px, 90%);
+    margin: auto;
+}
