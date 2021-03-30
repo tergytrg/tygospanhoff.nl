@@ -5,11 +5,17 @@ body {
 }
 ul {
   list-style-type: none;
-  margin: 0;
+  margin: auto;
   padding: 0;
   overflow: hidden;
   background-color: #26B;
   font-size: 20px;
+  width: 1240px;
+}
+.ulcontainer {
+  width: 100%;
+  background-color: #26B;
+  height: 55px
 }
 li {
   float: left;
@@ -26,12 +32,14 @@ li a:hover {
   background-color: #059;
 }
 .content {
-	padding: 10px;
+	padding: 20px;
 	font-size: 1.2em;
 	font-family: verdana;
     background: #FFF;
+	width: 1200px;
+    margin: auto;
 }
-.bodybody {
+.contentcontainer {
 	padding: 20px;
 }
 h1 {
