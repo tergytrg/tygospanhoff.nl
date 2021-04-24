@@ -1,3 +1,16 @@
+/* Hier de dingetjes die alleen op telefoonschermpjes hoeven*/
+@media only screen and (max-width: 700px) {
+  .content {
+	font-size: 0.8em;
+}
+}
+/* Hier de dingetjes die op grotere schermpjes moeten*/
+@media only screen and (min-width: 701px) {
+  .content {
+	font-size: 1.2em;
+}
+}
+/* Hier de algemene dingetjes*/
 body {
   font-family: Arial;
   margin: 0;
@@ -33,7 +46,6 @@ li a:hover {
 }
 .content {
 	padding: 20px;
-	font-size: 1.2em;
 	font-family: verdana;
     background: #FFF;
 	width: min(1200px, 90%);
@@ -58,3 +70,4 @@ p {
 #eend {
 	width: min(500px, 100%);
 }
+
