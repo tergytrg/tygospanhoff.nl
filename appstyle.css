@@ -1,11 +1,31 @@
+@media screen and (max-width: 750px) {
 app {
   float: left;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 20px;
-  width: min(100%, 389px);
+  width: 100%;
 }
-
+}
+@media screen and (max-width: 1200px) and (min-width: 751px) {
+app {
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  width: 47%;
+}
+}
+@media screen and (min-width: 1201px) {
+app {
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  width: 31%;
+}
+}
+	
 app a {
   display: block;
   color: #444;
@@ -25,4 +45,5 @@ app a:hover {
 	font-family: verdana;
 	width: min(1260px, 90%);
     margin: auto;
+	overflow: visible;
 }
