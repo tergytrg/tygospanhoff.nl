@@ -29,7 +29,7 @@ ul {
   list-style-type: none;
   margin: auto;
   padding: 0;
-  overflow: hidden;
+  overflow: visible;
   background-color: #26B;
   font-size: 20px;
   width: min(1240px, 90%);
@@ -37,7 +37,7 @@ ul {
 .ulcontainer {
   width: 100%;
   background-color: #26B;
-  height: 55px
+  height: 56px
 }
 li {
   float: left;
