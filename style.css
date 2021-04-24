@@ -52,3 +52,9 @@ h1 {
 p {
 	color: #444;
 }
+#constructie {
+	width: min(700px, 100%);
+}
+#eend {
+	width: min(500px, 100%);
+}

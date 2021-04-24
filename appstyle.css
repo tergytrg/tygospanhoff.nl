@@ -1,31 +1,39 @@
-@media screen and (max-width: 750px) {
+@media only screen and (max-width: 700px) {
+.appcontainer {
+	display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+	font-size: 1.2em;
+	font-family: verdana;
+	width: min(1240px, 90%);
+	margin: auto;
+}
+}
+@media only screen and (min-width: 701px) and (max-width: 1200px){
+.appcontainer {
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+	font-size: 1.2em;
+	font-family: verdana;
+	width: min(1240px, 90%);
+	margin: auto;
+}
+}
+@media only screen and (min-width: 1200px) {
+.appcontainer {
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+	font-size: 1.2em;
+	font-family: verdana;
+	width: min(1240px, 90%);
+	margin: auto;
+}
+}
 app {
   float: left;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 20px;
-  width: 100%;
 }
-}
-@media screen and (max-width: 1200px) and (min-width: 751px) {
-app {
-  float: left;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 20px;
-  width: 47%;
-}
-}
-@media screen and (min-width: 1201px) {
-app {
-  float: left;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 20px;
-  width: 31%;
-}
-}
-	
 app a {
   display: block;
   color: #444;
@@ -37,13 +45,4 @@ app a {
 app a:hover {
   background-color: #059;
   color: #FFF;
-}
-
-.appcontainer {
-	padding: 10px;
-	font-size: 1.2em;
-	font-family: verdana;
-	width: min(1260px, 90%);
-    margin: auto;
-	overflow: visible;
 }
