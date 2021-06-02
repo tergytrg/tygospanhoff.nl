@@ -75,4 +75,10 @@ p {
 #eend {
 	width: min(700px, 100%);
 }
-
+textarea {
+  width: 400px;
+  height: 150px;
+}
+button {
+background-color: #9999FF;
+}
