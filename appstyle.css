@@ -7,6 +7,7 @@
 	font-family: verdana;
 	width: min(1240px, 95%);
 	margin: auto;
+	
 }
 }
 @media only screen and (min-width: 701px) and (max-width: 1200px){
@@ -18,6 +19,7 @@
 	font-family: verdana;
 	width: min(1240px, 90%);
 	margin: auto;
+	
 }
 }
 @media only screen and (min-width: 1200px) {
@@ -31,8 +33,10 @@
 	margin: auto;
 }
 }
+
 app {
   float: left;
+  
 }
 app a {
   display: block;
@@ -41,6 +45,7 @@ app a {
   text-decoration: none;
   background: #FFF;
   padding: 10px;
+  border-radius: 4px;
 }
 app a:hover {
   background-color: #059;
