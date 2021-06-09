@@ -140,3 +140,9 @@ canvas {
   background: #11F;
   cursor: pointer;
 }
+#throbber1 {
+	width: 30%;
+}
+#throbber2 {
+	width: 30%;
+}
