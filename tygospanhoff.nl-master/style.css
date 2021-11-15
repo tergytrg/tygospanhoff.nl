@@ -1,0 +1,154 @@
+/* Hier de dingetjes die alleen op telefoonschermpjes hoeven*/
+@media only screen and (max-width: 700px) {
+  .content {
+	padding: 10px;
+	width: 95%;
+      text-align: center;
+  }
+	.contentcontainer {
+	padding: 10px;
+}
+}
+/* Hier de dingetjes die op grotere schermpjes moeten*/
+@media only screen and (min-width: 701px) {
+  .content {
+	padding: 20px;
+	width: min(1200px, 90%);
+      text-align: center;
+ }
+	.contentcontainer {
+	padding: 20px;
+}
+html {
+  overflow-y: scroll; 
+}
+}
+/* Hier de algemene dingetjes*/
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #202020;
+}
+ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: visible;
+  background-color: #26B;
+  font-size: 20px;
+  width: min(1240px, 90%);
+}
+.ulcontainer {
+  width: 100%;
+  background-color: #26B;
+  height: 56px;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #FFF;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #059;
+}
+.content {
+	font-family: verdana;
+    background: #303030;
+    margin: auto;
+	font-size: 1em;
+    border-radius: 12px;
+}
+.foto {
+	width: min(500px, 100%);
+    border-radius: 21%;
+}
+h1 {
+	color: #0AF;
+	margin-top: 0;
+}
+p {
+	color: #CCC;
+}
+#constructie {
+	width: min(700px, 100%);
+}
+#eend {
+	width: min(700px, 100%);
+}
+textarea {
+  width: min(400px, 100%);
+  height: 150px;
+}
+.button {
+  background-color: #26B;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.button:hover {
+  background-color: #059;
+  color: white;
+}
+
+canvas {
+	background: #FFF; 
+	display: block; 
+	width: 100%;
+	border:3px solid black
+}
+.slidecontainer {
+  width: 100%;
+
+}
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #939393; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 25px; 
+  height: 25px;
+  background: #26B;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #11F;
+  cursor: pointer;
+}
+#throbber1 {
+	width: 30%;
+}
+#throbber2 {
+	width: 30%;
+}
+label {
+    color: #DDD;
+}

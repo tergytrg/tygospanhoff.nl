@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Throbbers</title>
+      <link rel="stylesheet" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+   </head>
+   <body>
+      <div class="ulcontainer">
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="apps.html">Apps</a></li>
+         </ul>
+      </div>
+      <div class="contentcontainer">
+         <div class="content">
+            <h1>Bewegende iconen</h1>
+            <p>Op deze pagina staan een aantal bewegende iconen. Deze kunnen worden gebruikt als een throbber.</p>
+            <canvas id="throbber1" width="300" height="300"></canvas><br>
+			<p>Deze throbbers komen van de pagina over de <a href="apps.html">stelling van Pythagoras</a></p>
+            <br>
+            <div class="slidecontainer">
+            </div>
+         </div>
+      </div>
+      <script>
+         var canvas = document.getElementById("throbber1");
+         var ctx = canvas.getContext("2d");
+         var a = 100;
+         var b = 300-a;
+         var k2 = "#FEFA27";
+         var k1 = "#509916";
+		 var t = 0
+		 var snelheid = 3
+         
+         
+         function drawTri1() {
+             ctx.beginPath();
+             ctx.moveTo(a, 0);
+             ctx.lineTo(a, a);
+             ctx.lineTo(0, a);
+             ctx.lineTo(a+b, a);
+             ctx.lineTo(a, 0);
+         	ctx.fillStyle = "#F83E7F";
+             ctx.fill();
+         	ctx.lineWidth = 3;
+         	ctx.strokeStyle = "black";
+         	ctx.stroke();
+             ctx.closePath();
+         }
+         
+         function drawTri2() {
+             ctx.beginPath();
+             ctx.moveTo(a, 0);
+             ctx.lineTo(a+b, 0);
+             ctx.lineTo(a+b, a);
+             ctx.lineTo(a, 0);
+         	ctx.fillStyle = "#900C3F";
+             ctx.fill();
+         	ctx.lineWidth = 3;
+         	ctx.strokeStyle = "black";
+         	ctx.stroke();
+             ctx.closePath();
+         }
+         function drawTri3() {
+             ctx.beginPath();
+             ctx.moveTo(a+b, a);
+             ctx.lineTo(a+b, a+b);
+             ctx.lineTo(b, a+b);
+             ctx.lineTo(a+b, a);
+         	ctx.fillStyle = "#F83E7F";
+             ctx.fill();
+         	ctx.lineWidth = 3;
+         	ctx.strokeStyle = "black";
+         	ctx.stroke();
+             ctx.closePath();
+         }
+         function drawTri4() {
+             ctx.beginPath();
+             ctx.moveTo(a+b, a);
+             ctx.lineTo(b, a);
+             ctx.lineTo(b, a+b);
+             ctx.lineTo(a+b, a);
+         	ctx.fillStyle = "#900C3F";
+             ctx.fill();
+         	ctx.lineWidth = 3;
+         	ctx.strokeStyle = "black";
+         	ctx.stroke();
+             ctx.closePath();
+         }
+         function drawRect1() {
+             ctx.beginPath();
+             ctx.moveTo(0, 0);
+             ctx.lineTo(a, 0);
+             ctx.lineTo(a, a);
+             ctx.lineTo(0, a);
+         	ctx.fillStyle = k1;
+             ctx.fill();
+         	ctx.lineWidth = 3;
+         	ctx.strokeStyle = "black";
+         	ctx.stroke();
+             ctx.closePath();
+         }
+         function drawRect2() {
+             ctx.beginPath();
+             ctx.moveTo(0, a);
+             ctx.lineTo(b, a);
+             ctx.lineTo(b, a+b);
+             ctx.lineTo(0, a+b);
+         	ctx.fillStyle = k2;
+             ctx.fill();
+         	ctx.lineWidth = 3;
+         	ctx.strokeStyle = "black";
+         	ctx.stroke();
+             ctx.closePath();
+         }
+         
+         function draw() {
+             ctx.clearRect(0, 0, canvas.width, canvas.height);
+             drawTri1();
+         	drawTri2();
+         	drawTri3();
+         	drawTri4();
+         	drawRect1();
+         	drawRect2();
+         if(a<300) {
+			a = a+snelheid;
+         } else {
+			a = 0;
+			if(t& 1) {
+				k1 = "#FEFA27"; 
+				k2 = "#509916";
+			} else {
+				k1 = "#509916";
+				k2 = "#FEFA27"; 
+			}
+         }
+         b = 300-a;
+		 t = t+1;
+         }
+         
+         setInterval(draw, 10);
+         
+      </script>
+   </body>
+</html>
