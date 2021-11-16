@@ -40,14 +40,14 @@ app {
 }
 app a {
   display: block;
-  color: #444;
+  color: #DDD;
   text-align: center;
   text-decoration: none;
   background: #303030;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 12px;
 }
 app a:hover {
-  background-color: #059;
-  color: #0AD;
+  background-color: #26B;
+  color: #FFF;
 }

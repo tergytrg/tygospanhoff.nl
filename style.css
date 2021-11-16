@@ -65,11 +65,11 @@ li a:hover {
     border-radius: 12px;
 }
 .foto {
-	width: min(500px, 100%);
+	width: min(500px, 75%);
     border-radius: 21%;
 }
 h1 {
-	color: #0AF;
+	color: #2AF;
 	margin-top: 0;
 }
 p {
