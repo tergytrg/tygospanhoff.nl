@@ -2,7 +2,7 @@
 <html>
    <head>
       <title>Tygo Spanhoff</title>
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="css/style.css">
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
    </head>
@@ -25,20 +25,19 @@
 			   <p>Beide vierkanten hebben dezelfde oppervlakte, en beide vierkanten bevatten vier roze driehoeken. De gele en groene vierkant links moeten samen dus even groot zijn als de blauwe vierkant rechts.</p>
 			   <p>Stel, we noemen de rechte zijden van de roze driehoek a en b. Dan heeft de gele vierkant een oppervlakte van a², en dan heeft de groene vierkant een oppervlakte van b². Laten we de schuine zijde c noemen, dan heeft de blauwe vierkant dus een oppervlakte van c².</p>
 			   <p>Omdat de gele en groene vierkant samen een oppervlakte hebben die gelijk is aan de blauwe vierkant, geldt: a² + b² = c²</p>
-			   <img src="foto/voorbeeld.png" width="95%"><br>
+			   <img src="images/voorbeeld.png" width="95%"><br>
 			   <p>We kunnen het ook bewijzen door alleen naar de rechterfiguur te kijken.</p>
 			   <p>De lengte van een zijde van het rechterfiguur is gelijk aan a+b. De oppervlakte van het gehele rechterfiguur is dus (a+b)². Als we dit uitschrijven krijgen we a² + 2ab + b².</p>
 			   <p>We kunnen de totale oppervlakte ook uitrekenen door eerst de oppervlakte van alle onderdelen los uit te rekenen. Eén driehoek heeft een oppervlakte van 1/2ab, dus vier driehoeken hebben een oppervlakte van 2ab. Neem daarbij nog de vierkant in het midden om een totale oppervlakte van 2ab + c² te krijgen.</p>
 			   <p>We hebben nu twee manieren waarop we de totale oppervlakte kunnen opschrijven. Deze kunnen we nu dus aan elkaar gelijk stellen: <br /> a² + 2ab + b² = 2ab + c² <br />a² + b² = c²</p>
 			   <p>En voilá. We zijn er wel vanuit gegaan de de blauwe figuur een vierkant is. Kun jij beredeneren waarom alle hoeken 90 graden zijn?</p>
-			   <p><a href="throbbers.html">Throbber</a></p>
             </div>
             <script>
-               var canvas = document.getElementById("spelcanvas");
-               var ctx = canvas.getContext("2d");
-               var slidera = document.getElementById("slidera");
-               var a = parseInt(slidera.value);
-               var b = 300-a;
+               const canvas = document.getElementById("spelcanvas");
+               const ctx = canvas.getContext("2d");
+               const slidera = document.getElementById("slidera");
+               let a = parseInt(slidera.value);
+               let b = 300-a;
                
                
                function drawTri1() {
