@@ -66,15 +66,16 @@ li a:hover {
   margin: auto;
 	font-size: 1em;
   border-radius: 12px;
+  
 }
 canvas {
-  padding: 20px;
-  width: min(1200px, 90%);
+  width: min(1240px, 100%);
 	display: block;
-  background: #303030;
+  background: #043a04;
   margin: auto;
 	font-size: 1em;
   border-radius: 12px;
+  margin-bottom: 20px;
 }
 .foto {
 	width: min(500px, 75%, 60vh);

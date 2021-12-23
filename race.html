@@ -6,7 +6,7 @@
 		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
+	<body onload="startGame()">
 		<div class="ulcontainer">
 			<ul>
 			<li><a href="index.html">Home</a></li>
@@ -16,6 +16,10 @@
 		</div>
 		<div class="contentcontainer">
             <canvas id="myCanvas"></canvas>
+			<div class="content">
+				<h1>Scroll Racer</h1>
+				<p>Een scroll-spelletje gemaakt in JavaScript. Gebruik WASD om te rijden.</p>
+			</div>
 		</div>
         <script src = "scripts/spel.js"></script>
 	</body>
